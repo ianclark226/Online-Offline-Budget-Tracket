@@ -47,7 +47,7 @@ self.addEventListener("activate", event => {
         }
       
         
-        if (event.request.url.includes("/api/transaction/bulk")) {
+        if (event.request.url.includes("/api/transaction")) {
           
           event.respondWith(
             caches.open(DATA_CACHE).then(cache => {
